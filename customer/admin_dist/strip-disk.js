@@ -1,0 +1,2 @@
+// only ajax call 
+//$()

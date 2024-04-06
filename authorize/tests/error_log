@@ -1,0 +1,9 @@
+[22-Jun-2020 12:52:04 UTC] PHP Fatal error:  Uncaught Error: Class 'PHPUnit_Framework_TestCase' not found in /home/zerxqg92qw6a/public_html/authorize/tests/AuthorizeNetSSL_Test.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/zerxqg92qw6a/public_html/authorize/tests/AuthorizeNetSSL_Test.php on line 3
+[22-Jun-2020 12:52:25 UTC] PHP Fatal error:  Uncaught RuntimeException: Property 'AUTHORIZENET_API_LOGIN_ID' not found. Define the property value or set the environment 'api_login_id' in /home/zerxqg92qw6a/public_html/authorize/tests/bootstrap.php:41
+Stack trace:
+#0 /home/zerxqg92qw6a/public_html/authorize/tests/Controller_Test.php(6): require_once()
+#1 {main}
+  thrown in /home/zerxqg92qw6a/public_html/authorize/tests/bootstrap.php on line 41

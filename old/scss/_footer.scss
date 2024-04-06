@@ -1,0 +1,284 @@
+.new-letter{
+    width: 100%;
+    display: block;
+    text-align: center;    
+    @include padding-tb;
+    border-top: 1px solid $primary-color;
+}
+
+.n-letter{
+    text-align: center;
+    width: 100%;
+    h2{
+        
+        font-size: 38px;
+        line-height: 38px;
+        color: $primary-color;
+        font-family: $body-font;
+        margin-bottom: 20px;
+    }
+    p{
+        color: lighten($font-color, 10%);        
+        font-size: 24px;
+        line-height: 28px;
+        margin-bottom: 15px;
+        display: block;  
+        letter-spacing: 3px;      
+    }
+}
+
+.n-form{
+    width: 100%;
+    display: block;
+    text-align: center;
+    margin-top: 25px;
+    input{
+        height: 52px;
+        display: inline-block;
+        vertical-align: top;
+        min-width: 466px;
+        border-radius: 0px;
+        border: 1px solid $primary-color;
+        color: $font-color;
+        @include border-radius (5px 0px 0px 5px);
+    }
+    button{
+        padding: 3px 35px 10px 35px;
+        background-color:$primary-color;
+        color: $color-white;
+        font-size: 20px;
+        text-transform: uppercase;
+        height: 52px;
+        line-height: 52px;
+        display: inline-block;
+        @include border-radius (0px 5px 5px 0px);
+        margin-left: -6px; @include transition();
+        &:hover{
+            background-color: lighten($primary-color, 10%);
+        }
+    }
+}
+
+footer {
+    width: 100%;
+    display: block; 
+     background-color: $primary-color;      
+}
+
+.map-section{ width: 100%; display: block; padding: 50px 0px 30px 0px; }
+
+.footr-logo{
+    width: 100%; display:block; text-align: center;
+    img{ display: inline-block; margin-bottom: 30px; }
+    h4{
+        margin-bottom: 15px;
+        font-size: 22px;
+        font-weight: 600;
+        color: $font-color;
+    }    
+}
+
+.logo-ul{
+    width: 100%; 
+    display: block;
+    text-align: center;
+    li{
+        display: block;
+        width: 100%;
+        a{
+            color: $font-color;
+            text-decoration: none;
+            display: block;
+            padding: 8px 15px;
+            @include transition();
+            &:hover{
+                color: $color-white;
+            }
+        }
+    }
+}
+
+.socil-icon{
+    width: 100%;
+    text-align: left;
+    padding-left: 30px;
+    margin-top: 30px;
+    display: block;
+    a{
+        display: inline-block;
+        width: 42px;
+        height: 42px;
+        @include border-radius (50%);
+        text-align: center;
+        padding: 9px 0px;
+        @include transition();
+        .fa{
+            color: $color-white;
+            font-size: 22px;
+        }
+    }
+}
+
+
+
+
+// second footer
+.footer-logo2{ width: 100%; text-align: left; display: block; }
+.footer-logo2 p{ color:$color-white;  }
+.footr-logo2 h4 {color: $color-white; position: relative;}
+.footr-logo2 h4:after{ content: ""; position: absolute; width: 60px; height: 4px; background-color: $color-white; left: 0; bottom: -10px; }
+.logo-ul3{ width: 100%; display: block; text-align: left; margin-top: 15px; }
+.logo-ul3 li{ display: inline-block; vertical-align: top; margin-right: 40px;  }
+.logo-ul3 li a{ color: $color-white; display: block; padding: 4px 10px; @include transition(); }
+.logo-ul3 li a:hover{ color: darken($primary-color, 20%); }
+
+.logo-ul2{ width: 100%; display: block; text-align: left; margin-top: 30px; }
+.logo-ul2 li{ display: block; color: $color-white;}
+.logo-ul2 li span{ width: 25px; text-align: left; display: inline-block; padding-top: 5px;}
+.logo-ul2 li a{ color: $color-white; max-width: 224px;  display: inline-block; padding: 3px 6px; vertical-align: top; @include transition(); }
+.logo-ul2 li a:hover{ color: darken($primary-color, 20%); }
+
+.payment-gatewayul{ width: 100%; text-align: right; display: block; }
+.payment-gatewayul li{ display: inline-block; }
+.payment-gatewayul li a { display: block;  }
+
+
+
+
+
+
+.copyright {
+    width: 100%;
+    display: block;
+    background-color: $primary-color;
+    padding: 30px 0px;
+    border-top: 1px solid lighten($primary-color, 5%);
+}
+
+.copy-txt{
+    text-align: center;
+    color: $color-white;
+    display: block;
+    a{
+        color:$color-white;
+        &:hover{ color: darken($primary-color, 20%); }
+    }
+    
+
+}
+
+
+
+
+
+
+.mobile-port{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    text-align:center;
+    background-color:$primary-color;
+    display: none;
+    .mob-bx{
+         position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        .mob-img{
+            img{
+        width: 100%;
+        max-width: 400px;
+        }
+        }
+    }
+    .mob-txt1{
+        font-size: 18px;
+        color: $color-white;
+    }
+    .mob-txt2{
+        font-size: 14px;
+        color: $color-white;
+        line-height: 22px;
+    }
+}
+
+
+// window loader
+#overlayer {
+  width:100vw;
+  height:100vh;  
+  position:fixed;
+  top: 0;
+  left: 0;
+  bottom: 0; 
+  right: 0;
+  z-index:999;
+  background:$primary-color;
+}
+.loader {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  z-index:3;
+  border: 4px solid $color-white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: loader 2s infinite ease;
+}
+
+.loader-inner {
+  vertical-align: top;
+  display: inline-block;
+  width: 100%;
+  background-color: $color-white;
+  animation: loader-inner 2s infinite ease-in;
+}
+
+@keyframes loader {
+  0% {
+    transform: rotate(0deg);
+  }
+  
+  25% {
+    transform: rotate(180deg);
+  }
+  
+  50% {
+    transform: rotate(180deg);
+  }
+  
+  75% {
+    transform: rotate(360deg);
+  }
+  
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes loader-inner {
+  0% {
+    height: 0%;
+  }
+  
+  25% {
+    height: 0%;
+  }
+  
+  50% {
+    height: 100%;
+  }
+  
+  75% {
+    height: 100%;
+  }
+  
+  100% {
+    height: 0%;
+  }
+}
